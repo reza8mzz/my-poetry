@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>رضا محمدزاده | ادبیات و هنر</title>
+  <link rel="icon" href="favicon.png">
+  <style>
+    :root {
+      --bg: #f4f4f4;
+      --text: #333;
+      --accent: #3498db;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #eee;
+      --accent: #8ab4f8;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Tahoma", sans-serif;
+      margin: 40px;
+      transition: all 0.3s ease;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+    }
+
+    p {
+      line-height: 1.9;
+      font-size: 18px;
+    }
+
+    .dark-toggle,
+    .lang-toggle {
+      position: fixed;
+      top: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .dark-toggle {
+      left: 20px;
+    }
+
+    .lang-toggle {
+      left: 150px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      display: block;
+      margin: 30px auto 10px;
+    }
+
+    .intro-box {
+      text-align: right;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .intro-box span {
+      font-size: 14px;
+      color: #777;
+      display: block;
+      margin-top: 5px;
+    }
+
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌓 حالت شب</button>
+  <button class="lang-toggle" onclick="toggleLanguage()">🌐 تغییر زبان</button>
+
+  <!-- Persian Section -->
+  <div class="container" id="content-fa">
+    <div class="intro-box">
+      <strong>رضا محمدزاده</strong><br>
+      متولد ۵ آوریل ۱۹۸۵
+      <span>
+        مهندسی صنایع - دانشگاه ویندزور، کانادا<br>
+        مهندسی مکانیک - دانشگاه آزاد تهران
+      </span>
+    </div>
+
+    <img src="profile.jpg" alt="رضا محمدزاده" class="profile-pic">
+
+    <div style="margin-top: 30px; padding: 20px; background: #f9f9f9; border-right: 4px solid var(--accent); border-radius: 12px;">
+      <p style="font-size: 18px; line-height: 2;">
+        – تو می‌خواهی رازها را بدانی؟<br>
+        – من نمی‌خواهم فقط بدانم، می‌خواهم بفهمم.<br>
+        – فهم، سفری‌ست از سؤال به سکوت…<br><br>
+        کوه‌ها آرام گرفتند، ذرات رقصیدند، و جهان نَفَس کشید.  
+        در دل سکوت، صدایی شنیده شد:<br><br>
+        – آیا در پایان همه‌ی علم، به خدا می‌رسیم؟<br>
+        – نه، به آغاز او…<br><br>
+        و در هر بیت حافظ، و در هر موج نور، صدای اوست:<br>
+        <strong>«من رحمانم، من رحیمم... هیچ داده‌ای برای همیشه گم نمی‌شود.»</strong>
+      </p>
+    </div>
+
+    <div class="poet-list" style="margin-top: 40px;">
+      <h2>شاعران بزرگ فارسی</h2>
+      <ul>
+        <li>مولانا جلال‌الدین بلخی (رومی)</li>
+        <li>حافظ شیرازی</li>
+        <li>سعدی شیرازی</li>
+        <li>فردوسی</li>
+        <li>خیام نیشابوری</li>
+        <li>باباطاهر</li>
+        <li>نظامی گنجوی</li>
+        <li>شهریار</li>
+        <li>سهراب سپهری</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      © 2025 رضا محمدزاده | عشق، شعر، زندگی
+    </div>
+  </div>
+
+  <!-- English Section -->
+  <div class="container" id="content-en" style="display:none; direction: ltr;">
+    <div class="intro-box" style="text-align: left;">
+      <strong>Reza Mohammadzadeh</strong><br>
+      Born: April 5, 1985
+      <span>
+        Industrial Engineering – University of Windsor, Canada<br>
+        Mechanical Engineering – Azad University, Tehran
+      </span>
+    </div>
+
+    <img src="profile.jpg" alt="Reza Mohammadzadeh" class="profile-pic">
+
+    <div style="margin-top: 30px; padding: 20px; background: #f9f9f9; border-left: 4px solid var(--accent); border-radius: 12px;">
+      <p style="font-size: 18px; line-height: 2;">
+        – Do you want to know the secrets?<br>
+        – I don’t just want to know. I want to understand.<br>
+        – Understanding is a journey from questions to silence...<br><br>
+        The mountains hushed, particles danced, and the universe exhaled.<br>
+        And in the stillness, a voice whispered:<br><br>
+        – Will we reach God at the end of science?<br>
+        – No. We will reach His beginning.<br><br>
+        And in every verse of Hafez, in every quantum wave, His voice echoes:<br>
+        <strong>“I am the Merciful, the Compassionate... no data is ever truly lost.”</strong>
+      </p>
+    </div>
+
+    <div class="poet-list" style="margin-top: 40px;">
+      <h2>Great Persian Poets</h2>
+      <ul>
+        <li>Rumi (Molana Jalaluddin)</li>
+        <li>Hafez</li>
+        <li>Saadi</li>
+        <li>Ferdowsi</li>
+        <li>Khayyam</li>
+        <li>Baba Taher</li>
+        <li>Nezami</li>
+        <li>Shahriar</li>
+        <li>Sohrab Sepehri</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      © 2025 Reza Mohammadzadeh | Poetry, Art, Life
+    </div>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+
+    function toggleLanguage() {
+      const fa = document.getElementById('content-fa');
+      const en = document.getElementById('content-en');
+      fa.style.display = fa.style.display === 'none' ? 'block' : 'none';
+      en.style.display = en.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
